@@ -15,6 +15,7 @@
 .stats-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-bottom: 28px; }
 .stat-card { padding: 20px; border-radius: var(--taskflow-radius); background: #eff6ff; color: #1d4ed8; }
 .stat-card-success { background: #ecfdf5; color: #047857; }
+.stat-card-pending { grid-column: 1 / -1; background: #fff7ed; color: #c2410c; }
 .stat-card .icon { font-size: 24px; }
 .stat-value { margin-top: 14px; font-size: 30px; font-weight: 700; }
 .stat-label { margin-top: 4px; font-size: 13px; }
@@ -59,8 +60,3 @@
   .stat-value { font-size: 26px; }
   .app-tab-label { font-size: 10px; }
 }
-/* Виправлення нижньої панелі: центрування та висота рядка */
-.app-tabbar .toolbar-inner { left: 50%; right: auto; width: 100%; transform: translateX(-50%); }
-.app-tabbar .link { height: 100%; padding: 0 4px; line-height: 1.2; }
-.app-tabbar .link .icon { line-height: 1; }
-.app-tab-label { line-height: 1.2; }
