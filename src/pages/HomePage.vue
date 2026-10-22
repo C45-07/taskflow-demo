@@ -50,7 +50,9 @@
       </f7-button>
     </div>
 
-    <AppTabbar active="home" />
+    <template #fixed>
+      <AppTabbar active="home" />
+    </template>
   </f7-page>
 </template>
 
